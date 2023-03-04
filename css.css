@@ -1,0 +1,458 @@
+body{
+    margin: 0;
+    background-color: lightgray;
+    margin-bottom: 0;
+}
+.logo
+{
+    margin-left: 140px;
+    width: 8%;
+}
+.menu_bar
+{
+    background-color: darkgray;
+    height: 110px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.menu_bar ul{
+    list-style: none;
+    display: flex;
+}
+.menu_bar ul li {
+    padding : 10px 30px ;
+    position: relative;
+}
+.menu_bar ul li a {
+
+    color : lightgray;
+    transition: background-color 0.5s;
+    filter: brightness(100%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    font-size: 2em;
+
+}
+.menu_bar ul li a:hover{
+    filter: brightness(30%);
+}
+
+.dropdownmenu{
+    z-index: 999;
+    display: none;
+}
+
+.menu_bar ul li:hover .dropdownmenu
+{
+    z-index: 999;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: darkgray;
+}
+.dropdownmenu ul 
+{
+    display: block;
+    margin: 10px;
+}
+.dropdownmenu ul li
+{
+    width: 90px;
+    padding: 10px;
+}
+.down
+{
+    float:right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+/* header fin */
+
+
+
+/* mid pict display loop start*/
+.container
+{
+    max-width: 100%;
+    
+}
+.imgroll{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap:wrap;
+    height:115vh;
+    overflow: hidden;
+}
+.imgroll_pic{
+    position: absolute;
+    width:80%;
+    height: 95vh;
+    z-index: 0;
+    object-fit: cover;
+    margin-top: 5.625rem;
+    transition: top 0.01s cubic-bezier(0,1.22,.43,.71);
+    
+}
+.loop1{
+    animation: loop1 30s  infinite;
+    transform: scale(1); 
+}
+.loop2{
+    animation: loop2 30s  infinite;
+    transform: scale(1);
+
+}
+.loop3{
+    animation: loop3 30s  infinite;
+    transform: scale(1);
+
+}
+.loop4{
+    animation: loop4 30s  infinite;
+    transform: scale(1);
+
+}
+.loop5{
+    animation: loop5 30s infinite;
+    transform: scale(1);
+
+}
+@keyframes loop1{
+    0%{
+        opacity:0.8;
+        transform: scale(1.2);
+    }
+    20%{
+        opacity:0;
+        transform: scale(1);
+    }
+    40%{
+        opacity:0;
+    }
+    60%{
+        opacity:0;
+    }
+    80%{
+        opacity:0;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 0.8;
+        transform: scale(1.2);
+    }
+}
+@keyframes loop2{
+    0%{
+        opacity:0;
+        transform: scale(1);
+    }
+    20%{
+        opacity:0.8;
+    }
+    25%{
+        transform: scale(1.2);
+    }
+    40%{
+        opacity:0;
+        transform: scale(1);
+    }
+    60%{
+        opacity:0;
+    }
+    80%{
+        opacity:0;
+    }
+    100%{
+        opacity:0;
+    }
+}
+@keyframes loop3{
+    0%{
+        opacity:0;
+    }
+    20%{
+        opacity:0;
+        transform: scale(1); 
+    }
+    40%{
+        opacity:0.8;
+    }
+    45%{
+        transform: scale(1.2);
+    }
+    60%{
+        opacity:0;
+        transform: scale(1);
+    }
+    80%{
+        opacity:0;
+    }
+    100%{
+        opacity:0;
+    }
+}
+@keyframes loop4{
+    0%{
+        opacity:0;
+    }
+    20%{
+        opacity:0;
+    }
+    40%{
+        opacity:0;
+        transform: scale(1);
+    }
+    60%{
+        opacity:0.8;
+    }
+    65%{
+        transform: scale(1.2);
+    }
+    80%{
+        opacity:0;
+        transform: scale(1);
+    }
+    100%{
+        opacity:0;
+    }
+}
+@keyframes loop5{
+    0%{
+        opacity:0;
+    }
+    20%{
+        opacity:0;
+    }
+    40%{
+        opacity:0;
+    }
+    60%{
+        opacity:0;
+        transform: scale(1);
+    }
+    80%{
+        opacity:0.8;
+    }
+    85%{
+        transform: scale(1.2);
+    }
+    100%{
+        opacity:0;
+        transform: scale(1);
+    }
+}
+#rolltxt{
+    top:0px;
+    z-index: 1;
+    font-size: 5vw;
+    display:block;
+    margin:auto;
+    position:relative;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow: black 1px , 1px , 20px;
+    font-family: Mulish, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    transition: top 0.05s cubic-bezier(0,1.22,.43,.71);
+    text-align: center;
+    text-shadow: 0 0 10px hsl(0, 0%, 27%), 
+    0 0 20px hsl(0, 8%, 31%),
+    0 0 80px hsl(0, 8%, 31%),
+    0 0 120px hsl(0, 8%, 31%); 
+    
+}
+
+
+
+
+
+.scroll_animation{
+    width: 100vw;
+    z-index: 3;
+    display:flex;
+    justify-content:space-between;
+    background-image: none ;
+    position:absolute;
+    opacity: 1;
+    transition: background-image 7s cubic-bezier(0.075, 0.82, 0.165, 1);
+    overflow: hidden;
+}
+.scroll_ani_pic{
+    height: 5vh;
+    z-index: 3;
+    position: absolute;
+    transition: left 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.scroll_before::before{
+    content:'';
+    height: 5vh;
+    width:var(--scrollSize);
+    max-width: 100vw;
+    background-color :hsl(0, 0%, 27%);
+    position:absolute;
+    transition: width 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.scroll_ani_pic_2{
+    height: 5vh;
+    z-index: 3;
+    position: absolute;
+    transition: right 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.scroll_after::after{
+    content:'';
+    height: 5vh;
+    right:0;
+    width:var(--scrollSize);
+    max-width: 100vw;
+    background-color :hsl(0, 0%, 27%);
+    position:absolute;
+    transition: width 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/*mid scroll pict ended */
+/*mid scroll pict ended */
+/*mid scroll pict ended */
+/*mid scroll pict ended */
+
+/* Third Part start */
+/* Third Part start */
+/* Third Part start */
+/* Third Part start */
+
+
+/* three small block */
+
+.Other
+{
+    margin-left: 400px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    padding-bottom: 0;
+}
+.white
+{   
+    align-content: center;
+    display: flex;
+}
+.white section
+{
+    margin-left: 9px;
+    background-color: aqua;
+    width: 300px;
+    height: 0px;
+}
+.white p
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: brown;
+    margin : 0 ;
+    z-index: 100;
+    font-size : 2em;
+}
+.white img 
+{
+    width: 300px;
+    height: 350px;
+    z-index: 0;
+}
+.white a
+{
+    text-decoration: none;
+}
+
+
+
+/* this changs the color of the pict when the mouse is on it*/
+
+.block 
+{
+    background-color: powderblue;
+    transition: background-color 0.5s;
+    
+}
+  
+.block:hover 
+{
+   box-shadow: 90px 5px gold ;
+}
+
+
+
+/* three block ended*/
+/* three block ended*/
+/* three block ended*/
+/* three block ended*/
+
+
+/*Sponsor father block start*/
+
+
+.sicon
+{  
+    position: relative;
+    margin: 0;
+    width: 100%;
+    margin-top: 0 px ;
+    height: 265px;
+    background-color: darkred;
+}
+#mi
+{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+#mi img
+{  
+    height: 200px;
+}
+.BB
+{
+    padding-left : 50px;
+   padding-top: 40px; 
+   transform: rotate(270deg);
+}
+.sicon h1
+{
+    margin : 0;
+    padding-bottom: 15px;
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+/*social medoa */
+
+.media
+{
+    width: 100%;
+    height  :  285px;
+    background-color: antiquewhite;
+    z-index: 1;
+}
+.social 
+{
+    display: flex;
+    z-index: 1;
+}
+
+.F
+{
+    height: 5px;
+    background-color: antiquewhite;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
