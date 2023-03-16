@@ -2,14 +2,10 @@
     font-family:setofont;
     src: url(/setofont.ttf);
 }
-body
-{
-    margin: 0;
-    background-color:lightgray;
-    margin-bottom: 0;
+@font-face {
+    font-family:Hel;
+    src: url(/HelveticaLTStd.otf);
 }
-
-/*header start */
 body{
     margin: 0;
     background-color: lightgray;
@@ -36,6 +32,7 @@ body{
     display: flex;
 }
 .menu_bar ul li {
+    font-size: 1.1em;
     padding : 10px 30px ;
     position: relative;
 }
@@ -44,7 +41,7 @@ body{
     color : lightgray;
     transition: background-color 0.5s;
     filter: brightness(100%);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     font-size: 2em;
 
@@ -54,11 +51,13 @@ body{
 }
 
 .dropdownmenu{
+    z-index: 999;
     display: none;
 }
 
 .menu_bar ul li:hover .dropdownmenu
 {
+    z-index: 999;
     display: block;
     position: absolute;
     left: 0;
@@ -69,9 +68,11 @@ body{
 {
     display: block;
     margin: 10px;
+    margin-right: 3px;
 }
 .dropdownmenu ul li
 {
+    margin-right: 10px;
     width: 90px;
     padding: 10px;
 }
@@ -80,6 +81,18 @@ body{
     float:right;
     margin-left: 10px;
     padding-top: 3px;
+}
+
+/* header finifh */
+
+
+#span
+{
+    font-size: 1.5em;
+}
+#abouts
+{
+    font-size: 1em;
 }
 .hr
 {
@@ -102,12 +115,12 @@ body{
 .First p
 {
     font-size: 28px;
-    font-family: setofont;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .A1
 {
     font-size: 4em;
-    font-family: setofont;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .pho
 {
@@ -117,36 +130,85 @@ body{
 {
     background-color: lightgray;
     border: none;
-    font-size: 2em;
-    font-family: setofont;
-    padding-left: 40px;
-    width: 100px;
+    font-size: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 15px ;
+    width: 300px;
     height: 50px;
 }
-.groups h1
+.btn:hover
+{
+    color: darkblue;
+}
+.groups h2
 {
     padding-left: 50px;
-    font-size: 3em;
-    font-family: setofont;
+    font-size: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.groups{
+    padding-left: 50px;
 }
 #p1
 {
-    padding-left: 50px;
+    padding-left: 150px;
     padding-right: 50px;
-    font-size: 3em;
-    font-family: setofont;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.hope h1
+.award
 {
+    padding-left: 50px;
+}
+.award h1 {
     font-size: 3em;
-    font-family: setofont;
+}
+.Year
+{
+    padding-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 2.9em;
+    list-style: none;
+}
+.SYear
+{
+    padding-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 0.8em;
+    list-style: none;
+}
+
+.hope h2
+{
+    font-size: 3.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hopes
+{
+    font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.group
+{
+    padding-left: 50px;
+    font-size: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .hope pre
 {
     padding-left: 50px;
     padding-right: 50px;
     font-size: 2em;
-    font-family: setofont;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#p2
+{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .F
 {

@@ -1,23 +1,27 @@
 function changewordMac(){
     
-    document.getElementById("p1").innerHTML="機械:和設計組密切討論，將設計組的草圖實現，製作機器人的零件與組裝。組裝完成後布置場地，並且排除測試後的故障，讓機器人順利運作。";
+    document.getElementById("p1").innerHTML="Institution Team is the team that design , manufacture and build the whole robot . After finishing the robot is built , power distribution is the last process before everything is complete , we also arrange the course for every season .";
     pic.src="../pictroll/pict6.png";
 }
 function changewordPro(){
    
-    document.getElementById("p1").innerHTML="程式:使用Java語言根據自己團隊所設計的機器人做程式的編寫及設計，並且做優化及測試 ";
+    document.getElementById("p1").innerHTML="Programming Team , We convert all the actions and mechanisms of the robot fiom conceprion to programming language . With rigorous logic , we make the concepts into reality step by step, during the process , it is necessary for us to correct the error constantly . ";
     pic.src="../pictroll/pict5.png";
 }
-function changewordEle(){
-    
-    document.getElementById("p1").innerHTML=" 配電:配電就像機器人的神經系統一樣,讓機器人的每個部位能有動力,我們會幫助機械組做的機構配電讓機器人動起來, 平時會學習機器人的配電和氣動系統,也會和機械組討論機器人製作方向。 ";
-    pic.src="../pictroll/pict6.png";
-}
-function changewordDes(){
-    document.getElementById("p1").innerHTML=" 設計:分析競賽任務，將各個功能整合在空間有限的底盤上，藉由Solidworks畫出他們的想法，在組裝完成後反覆測試。  ";
-    pic.src="../pictroll/pict6.png";
-}
+
 function changewordWor(){
-    document.getElementById("p1").innerHTML=" 行政:行政組協助隊務推動,關心各組出席狀況並對會議記錄進行檢討, 以及承辦隊上活動,還有辦理活動和修訂團隊規章。" ;
+    document.getElementById("p1").innerHTML=" Assist with team operations, monitor attendance of all groups, review meeting minutes, organize team events, and manage revisions to team policies and regulations." ;
     pic.src="../pictroll/pict7.png";
+}
+
+
+
+function changewordTech(){
+    document.getElementById("p2").innerHTML=" Try our best improving the ability of hand making , programming wiring and also robot designing, also construct a perfect administration team ,  enhance the effeciency and self - discipline ." ;
+}
+function changewordAward(){
+    document.getElementById("p2").innerHTML="  Set our goal to get the best award , try our best making a robot that almost perfect , and pubilicize our team and develop extreme fluent automatic." ;
+}
+function changewordrelation(){
+    document.getElementById("p2").innerHTML=" Maintain good relationships with other teams by regularly organizing events for exchanging ideas and assisting newly established teams with our technical expertise and management experience." ;
 }

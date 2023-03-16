@@ -24,6 +24,7 @@ body{
     display: flex;
 }
 .menu_bar ul li {
+    font-size: 1.1em;
     padding : 10px 30px ;
     position: relative;
 }
@@ -32,7 +33,7 @@ body{
     color : lightgray;
     transition: background-color 0.5s;
     filter: brightness(100%);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     font-size: 2em;
 
@@ -59,9 +60,11 @@ body{
 {
     display: block;
     margin: 10px;
+    margin-right: 3px;
 }
 .dropdownmenu ul li
 {
+    margin-right: 10px;
     width: 90px;
     padding: 10px;
 }
@@ -374,6 +377,7 @@ body{
 
 .block 
 {
+    padding-left: 40px;
     background-color: powderblue;
     transition: background-color 0.5s;
     
@@ -425,7 +429,7 @@ body{
     margin : 0;
     padding-bottom: 15px;
     font-size: 2em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 

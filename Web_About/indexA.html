@@ -16,42 +16,41 @@
     <link rel="icon" type="image" href="7130.png">
 </head>
 <body>
-
-        <header>
-            <div class="menu_bar">
-                <img class="logo" src="7130.png" >
-        
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../Web_About/indexA.html">About</a></li>
-                    <li><a href="../Web_Sponsor/indexS.html">Sponsors</a></li>
-                    <li><a href="#">History <i class="down"></i> </a>
-                    
-                        <div class="dropdownmenu">
-                            <ul>
-                                <li><a href="https://www.thebluealliance.com/team/7130/2022">2022</a></li>
-                                <li><a href="https://www.thebluealliance.com/team/7130/2021">2021</a></li>
-                                <li><a href="https://www.thebluealliance.com/team/7130/2020">2020</a></li>
-                                <li><a href="https://www.thebluealliance.com/team/7130/2019">2019</a></li>
-                                <li><a href="https://www.thebluealliance.com/team/7130/2018">2018<i class="down"></i></a></li>
-                            </ul>
-                        </div>
-                    
-                    </li>
-                </ul>
-            </div>
-        </header>
+    <header>
+        <div class="menu_bar">
+            <img class="logo" src="7130.png" >
+    
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Web_About/indexA.html">About</a></li>
+                <li><a href="../Web_Sponsor/indexS.html">Sponsors</a></li>
+                <li><a href="#">History <i class="down"></i> </a>
+                
+                    <div class="dropdownmenu">
+                        <ul>
+                            <li><a href="https://www.thebluealliance.com/team/7130/2022">2022</a></li>
+                            <li><a href="https://www.thebluealliance.com/team/7130/2021">2021</a></li>
+                            <li><a href="https://www.thebluealliance.com/team/7130/2020">2020</a></li>
+                            <li><a href="https://www.thebluealliance.com/team/7130/2019">2019</a></li>
+                            <li><a href="https://www.thebluealliance.com/team/7130/2018">2018<i class="down"></i></a></li>
+                        </ul>
+                    </div>
+                
+                </li>
+            </ul>
+        </div>
+    </header>
     <div class="large">
         <div class="First">
-            <img src="7130.png" width="200px" class="pho" >
+            <img src="7130.png" width="300px" class="pho" >
 
             <p>
-            關於我們
+            <span id="span">About Us</span>
             <br>
             <br>
-            我們是 FRC team 7130 Futureshock,一個來自臺中明道中學的隊伍。
-            創立於 2017 年,Futureshock 作為新手團隊已經在各類練習賽及區域賽中獲得佳績。
-            我們的成員皆充滿對機器人及電腦工程的熱情,不管是團隊內的大小事,我們都會盡全力做到最好,更期待讓世界看見我們,看見台灣。 
+            <span id="abouts">
+                We are FRC team 7130 Futureshock, a team from Mingdao High School in Taichung, Taiwan. Established in 2017, Futureshock has achieved great results in various practice and regional competitions as a rookie team. Our members are passionate about robotics and computer engineering, and we strive to do our best in every aspect of team operations. We look forward to showcasing ourselves and Taiwan to the world.
+            </span>
             </p>
             <img src="../pictroll/pict2.png" width="400px">
         </div>
@@ -61,46 +60,102 @@
         <br>
         <br>
             <div class="groups">
-                <h1>FRC 7130 分成5個組別 </h1>
+                <h2  id="group">FRC 7130 is separated into 3 groups </h2>
                 <br>
-                <button class="btn" onclick="changewordMac()">機械</button>
-                <button class="btn" onclick="changewordPro()">程式</button>
-                <button class="btn" onclick="changewordEle()">配電</button>
-                <button class="btn" onclick="changewordDes()">設計</button>
-                <button class="btn" onclick="changewordWor()">行政</button>
+                <button class="btn" onclick="changewordMac()">Institution</button>
+                <button class="btn" onclick="changewordPro()">Programming</button>
+                <button class="btn" onclick="changewordWor()">Administration</button>
             </div>
             <br>
             <div class="WAP">
-            <p id="p1">機械:和設計組密切討論，將設計組的草圖實現，製作機器人的零件與組裝。組裝完成後布置場地，並且排除測試後的故障，讓機器人順利運作。</p>
+            <p id="p1">Institution Team is the team that design , manufacture and build the whole robot . After finishing the robot is built , power distribution is the last process before 
+                everything is complete , we also arrange the course for every season .</p>
         
             <br>
             <img   id="pic" src="../pictroll/pict6.png" alt="" width="300">
             </div>
         </div>
+        <br>
+        <hr class="hr">
+        <br>
+
+        <div class="award">
+            <h1 class="group">Awards</h2>
+                <li class="Year">
+                    <ul>2018 
+                        <li class="SYear">
+                            <br>
+                            <ul>imagery award</ul>
+                        </li>
+                    </ul>
+                    <ul>2019
+                        <li class="SYear">
+                            <br>
+                            <ul>Australian regional third place</ul>
+                            <br>
+                            <ul>Off season second place</ul>
+                    </ul>
+                    <ul>2022
+                        <li class="SYear">
+                            <br>
+                            <ul>Hon Hai Regional third place</ul>
+                        </li>
+                    </ul>
+                </li>
+            <br>
+
+        </div>
+
         <hr class="hr">
         <br>
         <div class="hope">
+
+            <div class="groups">
+                <h2  class="group">Our Hopes </h2>
+                <br>
+                <button class="btn" onclick="changewordTech()">Technique</button>
+                <button class="btn" onclick="changewordAward()">Goal</button>
+                <button class="btn" onclick="changewordrelation()">Relationships</button>
+            </div>
+            <div class="WAP">
+                <p id="p2">
+                    Try our best improving the ability of hand making , programming wiring and also robot designing, also construct a perfect administration team , enhance the effeciency and self - discipline .
+                </p>
+            </div>  
+
+
+
+
+            
+
+<!--             
             <br>
-            <center><h1>我們的期望</h1></center>
+            <center><h2>Our Hope</h2></center>
             <br>
             <center><pre>
-團隊技術<br>
+<span class="hopes">Technique</span>
+<br>
+Try our best improving the ability of hand making , programming wiring and also robot designing, also construct a perfect administration team , enhance the 
 努力精進和研究手作、撰寫程式、線路配設及設計機器人等能力，並建構出完善行政機構，使隊伍效率和自律性提升
 
 
 
-冠軍聯盟<br>
+<span class="hopes">Championship</span>
+<br>
+Set our goal to get the best award , try our best making a robot that almost perfect , and pubilicize our team and develop extreme fluent automatic.
 以各項最佳獎為目標，做出近乎完美的機器人、積極宣傳我方隊伍以及發展極順暢的自動控制
 
 
 
-對外關係<br>
+<span class="hopes">External Relations</span>
+<br>
+Maintain good relationships with other teams by regularly organizing events for exchanging ideas and assisting newly established teams with our technical expertise and management experience.                                                          
 和其他隊伍保持良好關係，時常辦理和其他隊伍交流之活動，並協助新成立隊伍給予技術層面、經營方式等我方經驗
 
 
             </pre></center>
         </div>
-    </div>
+    </div> -->
 
     
     <section class="F">
